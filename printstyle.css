@@ -1,0 +1,25 @@
+@media print {
+    /* Adjust margins for print */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Increase font size for better readability when printed */
+    p {
+      font-size: 12pt;
+    }
+  
+    /* Hide certain elements that are not relevant for print */
+    .hide-on-print {
+      display: none;
+    }
+  
+    /* Apply specific formatting for sections */
+    .cv-section {
+      margin-bottom: 20pt;
+    }
+  
+    /* Add any other print-specific styles as needed */
+  }
+  

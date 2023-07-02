@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RESUME+</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon-32x32.png"> -->
+    <style>
+        .navbar-custom {
+            background-color: #faf8f8;
+        }
+
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            overflow: hidden;
+            text-shadow: #010101;
+            color: black;
+            border-right: .15em solid rgb(16, 16, 15);
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .1em;
+            animation: typing 1s steps(40, end), blink-caret .99s step-end infinite;
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            border-right: .15em solid rgb(16, 15, 14);
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .1em;
+            animation: typing 4s steps(40, end), blink-caret .99s step-end infinite;
+        }
+
+        .footer li a {
+            color: rgb(24, 162, 90);
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: rgb(7, 7, 7)
+            }
+        }
+
+        .p {
+            color: yellowgreen;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .main-content {
+            padding-top: 100px;
+        }
+
+        .navbar-custom {
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* ... */
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .resume-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #090907;
+        }
+
+        .container p {
+            font-weight: bold;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin: 0 10px;
+        }
+
+        .footer ul li a {
+            color: #010101;
+            text-decoration: dotted;
+            font: weight 100px;
+            ;
+        }
+
+        .template-photos {
+            display: grid;
+            justify-content: center;
+            border: #141212;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            gap: 20px;
+        }
+
+        .template-image {
+            width: 650px;
+            height: 750px;
+            /* Add any other styling properties you need */
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .card {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            margin-top: 10px;
+            color: #6c757d;
+        }
+
+        .create-resume-button {
+            margin-top: 20px;
+        }
+    </style>
+    <style>
+        body {
+            transition: background-color 0.9s ease;
+        }
+
+        .dark-mode {
+            background-color: #333333;
+            color: #000000;
+        }
+
+        .navbar-custom {
+            background-color: #fdfdfd;
+        }
+
+        .navbar-custom.light-mode {
+            background-color: #f8f8ef;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            color: #090907;
+            transition: background-color 0.9s ease;
+
+        }
+
+        .footer.dark-mode {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            transition: background-color 0.9s ease;
+
+        }
+
+        .card.dark-mode {
+            background-color: #444444;
+            color: #ffffff;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+    </style>
+    <style>
+        body.dark-mode {
+            color: #ffffff;
+        }
+
+        body.dark-mode a {
+            color: #ffffff;
+        }
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode h4 {
+            color: #ffffff;
+        }
+
+        body.dark-mode ul,
+        body.dark-mode li {
+            color: #ffffff;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Comic Sans MS', cursive;">RESUME+</a>
+            <div class="ml-auto">
+                <button id="modeSwitch" class="btn  btn btn-dark ">Dark Mode</button>
+                <a href="login.php" class="btn btn-primary mr-2">Login</a>
+                <a href="register.php" class="btn btn-success">Signup</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <section class="center-content">
+                <h1 class="text-4xl leading-normal md:text-7xl font-header text-gray-900 mb-1">Create a professional
+                    resume</h1>
+                <h4 class="max-w-xl text-lg md:text-xl text-gray-500 mt-2 mb-9 tracking-wide">Fill in the blanks, auto
+                    generate template and download your resume instantly as pdf.</h4>
+                <br>
+                <a class="resume-button" href="login.php" ne="0.4869825391267826">Create your resume</a>
+                <br><br><br>
+                <h3>How our generated resume looks like....</h3>
+            </section>
+            <section class="template-photos">
+                <div class="template-photo">
+                    <div class="template-image" style="background-image: url('img1.webp');"></div>
+                </div>
+                <!-- <div class="template-photo">
+                    <div class="template-image" style="background-image: url('img2.jfif');"></div>
+                </div>
+                <div class="template-photo">
+                    <div class="template-image" style="background-image: url('img3.jpg');"></div>
+                </div> -->
+                <!-- Add more template photos as needed -->
+            </section>
+            <div class="card text-center">
+                <h5 class="card-title">Resumes are the first impression you make on potential employers.</h5>
+                <p class="card-text">They showcase your skills, experiences, and qualifications, enabling you to stand
+                    out from the competition.</p>
+                <a href="login.php" class="btn btn-primary create-resume-button">Create Resume</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li><a href="terms.html">Terms &amp; Privacy</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2023 RESUME+. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        var modeSwitchButton = document.getElementById('modeSwitch');
+        var body = document.querySelector('body');
+        var navbar = document.querySelector('.navbar-custom');
+        var footer = document.querySelector('.footer');
+        var card = document.querySelector('.card');
+
+        modeSwitchButton.addEventListener('click', function () {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                navbar.classList.remove('light-mode');
+                footer.classList.remove('dark-mode');
+                card.classList.remove('dark-mode');
+                modeSwitchButton.textContent = 'Dark Mode';
+
+                // Change text color to white
+                navbar.classList.remove('text-white');
+                footer.classList.remove('text-white');
+                card.classList.remove('text-white');
+            } else {
+                body.classList.add('dark-mode');
+                navbar.classList.add('light-mode');
+                footer.classList.add('dark-mode');
+                card.classList.add('dark-mode');
+                modeSwitchButton.textContent = 'Light Mode';
+
+                // Change text color to black
+                navbar.classList.add('text-white');
+                footer.classList.add('text-white');
+                card.classList.add('text-white');
+            }
+        });
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

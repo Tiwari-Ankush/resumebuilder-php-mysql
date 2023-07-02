@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESUME+ - Terms and Privacy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial bold';
+      background-color: white;
+      color: black;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .navbar-custom {
+      background-color: white;
+      
+
+    }
+
+    .footer {
+      background-color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+      color: #090907;
+    }
+
+
+
+
+    .footer ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin: 0 10px;
+    }
+
+    .footer ul li a {
+      color: #010101;
+      text-decoration: dotted;
+      font: weight 100px;
+      ;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  </style>
+  <style>
+    body {
+      transition: background-color 0.9s ease;
+    }
+
+    .dark-mode {
+      background-color: #333333;
+      color: #000000;
+    }
+
+    .navbar-custom {
+      background-color: #fdfdfd;
+    }
+
+    .navbar-custom.light-mode {
+      background-color: #f8f8ef;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      color: #090907;
+      transition: background-color 0.9s ease;
+
+    }
+
+    .footer.dark-mode {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .card {
+      background-color: #f8f9fa;
+      transition: background-color 0.9s ease;
+
+    }
+
+    .card.dark-mode {
+      background-color: #444444;
+      color: #ffffff;
+    }
+
+    .text-white {
+      color: #ffffff;
+    }
+  </style>
+  <style>
+    body.dark-mode {
+      color: #ffffff;
+    }
+
+    body.dark-mode a {
+      color: #ffffff;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode h4 {
+      color: #ffffff;
+    }
+
+    body.dark-mode ul,
+    body.dark-mode li {
+      color: #ffffff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+      <a class="navbar-brand" href="index.html" style="font-family: 'Comic Sans MS', cursive;">RESUME+</a>
+      <div class="ml-auto">
+        <!-- <a href="" class="btn btn-primary mr-2">Back</a> -->
+        <button id="modeSwitch" class="btn  btn btn-dark ">Dark Mode</button>
+
+        <a href="login.php" class="btn btn-info">Create</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <br><br>
+    <h2>Terms and Privacy - RESUME+</h2>
+    <br>
+    <hr>
+    <h3>Terms of Service</h3>
+    <hr>
+    <p>By using RESUME+ (the "Service"), you agree to comply with and be bound by the following terms and conditions:
+    </p>
+    <ul>
+      <li>The content and services provided by RESUME+ are for informational purposes only. We do not guarantee the
+        accuracy or completeness of the information.</li>
+      <li>You are responsible for the information you provide while using the Service. You agree not to submit false or
+        misleading information.</li>
+      <li>RESUME+ reserves the right to modify or discontinue the Service at any time without prior notice.</li>
+      <li>Your use of the Service is at your sole risk. RESUME+ shall not be liable for any direct, indirect,
+        incidental, or consequential damages arising out of the use of the Service.</li>
+    </ul>
+    <br>
+    <hr>
+    <h3>Privacy Policy</h3>
+    <hr>
+    <p>Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and protect
+      your personal information.</p>
+    <ul>
+      <li>We collect personal information that you voluntarily provide to us for the purpose of creating and managing
+        your resume.</li>
+      <li>We may use cookies to enhance your browsing experience and gather usage information.</li>
+      <li>We do not sell, trade, or transfer your personal information to third parties without your consent, except as
+        required by law.</li>
+      <li>We take reasonable measures to protect your personal information, but we cannot guarantee absolute security.
+      </li>
+    </ul>
+
+    <p>For any further questions or concerns regarding our Terms of Service or Privacy Policy, please contact us at
+      support@resumeplus.com.</p>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <ul>
+        <li><a href="terms.html">Terms &amp; Privacy</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <p>&copy; 2023 RESUME+. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    var modeSwitchButton = document.getElementById('modeSwitch');
+    var body = document.querySelector('body');
+    var navbar = document.querySelector('.navbar-custom');
+    var footer = document.querySelector('.footer');
+    var card = document.querySelector('.card');
+
+    modeSwitchButton.addEventListener('click', function () {
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        navbar.classList.remove('light-mode');
+        footer.classList.remove('dark-mode');
+        card.classList.remove('dark-mode');
+        modeSwitchButton.textContent = 'Dark Mode';
+
+        // Change text color to white
+        navbar.classList.remove('text-white');
+        footer.classList.remove('text-white');
+        card.classList.remove('text-white');
+      } else {
+        body.classList.add('dark-mode');
+        navbar.classList.add('light-mode');
+        footer.classList.add('dark-mode');
+        card.classList.add('dark-mode');
+        modeSwitchButton.textContent = 'Light Mode';
+
+        // Change text color to white
+        navbar.classList.add('text-white');
+        footer.classList.add('text-white');
+        card.classList.add('text-white');
+      }
+    });
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
